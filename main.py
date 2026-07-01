@@ -61,7 +61,7 @@ def print_slot_machine(columns):
         print()
     
 
-def amount():
+def enter_amount():
     while True:
         amount=input("What would you like to deposit? $")
         if amount.isdigit():
@@ -120,7 +120,7 @@ def spin(balance):
     return winnings-total_bet
 
 def main():
-    balance=amount()
+    balance=enter_amount()
     while True:
         print(f"Current balance ${balance}")
         answer=input("Press enter to play (q to quit)")
